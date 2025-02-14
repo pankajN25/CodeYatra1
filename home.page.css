@@ -3,6 +3,10 @@
        font-size:large;
        padding-left: 30px;
 }
+#imglogo{
+  height: 50px;
+  width: auto;
+}
 
 /* nav first */
 @media (max-width: 576px) {
