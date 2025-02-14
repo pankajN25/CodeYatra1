@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Code Yatra</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-work">Featured Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Code Yatra</h1>
+      <p>Web Developer | Creating Modern and Scalable Web Solutions</p>
+    </div>
+  </section>
+
+  <!-- Featured Work Section -->
+  <section id="featured-work" class="featured-work">
+    <div class="container">
+      <h2 class="text-center mb-5">Featured Work</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Project 1">
+            <div class="p-4">
+              <h5>Project 1</h5>
+              <p>A modern web application built with React and Node.js.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Project 2">
+            <div class="p-4">
+              <h5>Project 2</h5>
+              <p>An e-commerce platform with a sleek and responsive design.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Gallery Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Project 3">
+            <div class="p-4">
+              <h5>Project 3</h5>
+              <p>A portfolio website with a modern and clean design.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Project 4">
+            <div class="p-4">
+              <h5>Project 4</h5>
+              <p>A blog platform with a user-friendly interface.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Project 5">
+            <div class="p-4">
+              <h5>Project 5</h5>
+              <p>A task management app with real-time collaboration.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+                <label for="name">Name</label><br>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="Email">Email</label>
+              <input type="email" class="form-control" id="Email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="massage">Massage</label>
+              <textarea class="form-control" id="massage" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="mb-0">&copy;2025 Code Yatra. All rights reserved. | Designed with ❤️ by Code Yatra Team.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
