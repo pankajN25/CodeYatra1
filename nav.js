@@ -109,3 +109,40 @@ document.addEventListener("DOMContentLoaded", function () {
 function goToNavbar() {
     document.getElementById("navbar").scrollIntoView({ behavior: "smooth" });
 }
+
+
+//about us css '''
+// Fade-in animation on scroll
+const fadeElements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.5 });
+
+fadeElements.forEach(element => {
+  observer.observe(element);
+});
+
+// Lazy loading for images
+const lazyImages = document.querySelectorAll('img.lazy');
+
+const lazyLoad = (target) => {
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.classList.add('loaded');
+        observer.disconnect();
+      }
+    });
+  });
+
+  io.observe(target);
+};
+
+lazyImages.forEach(lazyLoad);

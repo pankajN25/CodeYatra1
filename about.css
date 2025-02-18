@@ -1,0 +1,38 @@
+/* about us css */
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+    }
+
+    /* Team section hover effects */
+    .team-member {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Lazy loading for images */
+    img.lazy {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    img.lazy.loaded {
+      opacity: 1;
+    }
+ 
+  
