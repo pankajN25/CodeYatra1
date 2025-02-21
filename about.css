@@ -9,6 +9,8 @@
     .fade-in {
       opacity: 0;
       transition: opacity 1s ease-in-out;
+      border: 1 px solid;
+      border-radius: 5px;
     }
 
     .fade-in.visible {
@@ -18,6 +20,7 @@
     /* Team section hover effects */
     .team-member {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #555551;
     }
 
     .team-member:hover {
