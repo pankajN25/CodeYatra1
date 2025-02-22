@@ -146,3 +146,14 @@ const lazyLoad = (target) => {
 };
 
 lazyImages.forEach(lazyLoad);
+
+// nav bar hide code
+$(document).ready(function () {
+  $(".navbar .nav-link, .navbar .dropdown-item").click(function () {
+    if (!$(this).hasClass("dropdown-toggle")) {
+      var offcanvasElement = document.getElementById("offcanvasDarkNavbar");
+      var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+      offcanvasInstance.hide(); // Hides the offcanvas menu
+    }
+  });
+});
